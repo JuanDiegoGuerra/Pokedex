@@ -1,3 +1,7 @@
+body {
+    background-image: url(img/anime_nature_bg_4.jpg);
+}
+
 form {
     width: 200px;
     margin: 20px auto;
@@ -18,7 +22,7 @@ input {
     text-align: center;
     padding: 10px;
     margin: 0 auto;
-    background-color: #FFF;
+    background-color: white;
     border: 1px solid black;
 }
 
