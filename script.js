@@ -77,3 +77,12 @@ const renderPokemonStats = stats => {
         pokeStats.appendChild(statElement);
     });
 }
+
+const renderNotFound = () => {
+    pokeName.textContent = 'No encontrado';
+    pokeImg.setAttribute('src', 'poke-shadow.png');
+    pokeImg.style.background =  '#fff';
+    pokeTypes.innerHTML = '';
+    pokeStats.innerHTML = '';
+    pokeId.textContent = '';
+}
