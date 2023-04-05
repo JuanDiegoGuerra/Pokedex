@@ -41,3 +41,27 @@ const setCardColor = types => {
     pokeImg.style.background =  `radial-gradient(${colorTwo} 33%, ${colorOne} 33%)`;
     pokeImg.style.backgroundSize = ' 5px 5px';
 }
+
+const renderPokemonTypes = types => {
+    pokeTypes.innerHTML = '';
+    types.forEach(type => {
+        const typeTextElement = document.createElement("div");
+        typeTextElement.style.color = typeColors[type.type.name];
+        typeTextElement.textContent = type.type.name;
+        pokeTypes.appendChild(typeTextElement);
+    });
+}
+
+const renderPokemonStats = stats => {
+    pokeStats.innerHTML = '';
+    stats.forEach(stat => {
+        const statElement = document.createElement("div");
+        const statElementName = document.createElement("div");
+        const statElementAmount = document.createElement("div");
+        statElementName.textContent = stat.stat.name;
+        statElementAmount.textContent = stat.base_stat;
+        statElement.appendChild(statElementName);
+        statElement.appendChild(statElementAmount);
+        pokeStats.appendChild(statElement);
+    });
+}
