@@ -1,3 +1,4 @@
+// SCRIPTS
 const pokeCard = document.querySelector('[data-poke-card]');
 const pokeName = document.querySelector('[data-poke-name]');
 const pokeImg = document.querySelector('[data-poke-img]');
